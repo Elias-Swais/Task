@@ -4,18 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="Sheet/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src ="Script/script.js"></script>
     <title>Personal Website</title>
 </head>
 <body>
-    <header class = "header_nav">
+    <header>
         <div class = "nav">
             <div class = "logoimg">
             <img class = "logo" src="british-museum.png">
             <p id ="logoName">Mueseen</p>
+            <input class ="button1" type="button" value="Change Text Color" onclick="changeColor()">
+            <input class ="button1" type="button" value="Change Image Direction" onclick="changeDirection()">
         </div>
             <ul>
                 <li><a href ="Index.html">Home</a></li>
@@ -24,15 +27,21 @@
                 <li><a href="#">About Us</a></li>
             </ul>
         </div>
+        <div class="mobileNav">
+            <img src="Menu-Button.png" alt="">
+            </ul>
+          </div>
+            
     </header>
     <div class = "background">
         <div class = "middle">
-        <h2>Mueseen</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto doloremque eaque quisquam quia! Ipsa quaerat laborum aperiam optio laboriosam libero iure nihil sit nisi culpa sequi, consequatur minima tenetur et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem assumenda fugit nihil atque facilis hic doloremque, est veniam quae ea consequatur incidunt, neque itaque eius laboriosam, quos excepturi provident asperiores.</p>
+        <h2 class ="middleParagraph">Mueseen</h2>
+        <p class ="middleParagraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto doloremque eaque quisquam quia! Ipsa quaerat laborum aperiam optio laboriosam libero iure nihil sit nisi culpa sequi, consequatur minima tenetur et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem assumenda fugit nihil atque facilis hic doloremque, est veniam quae ea consequatur incidunt, neque itaque eius laboriosam, quos excepturi provident asperiores.</p>
         </div>
     </div>
-    
-    <div class = "imageGallery">
+
+    <div id = "imagegallery"class = "imageGallery">
+
         <div class ="FirstImage">
             <img src="image1.jpg" alt="MonaLisa">
             <div class="overlay">
@@ -55,7 +64,6 @@
             </div>
         </div>
     </div>
-
     <footer class ="foot">
         <div class ="seperator"><h3>Useful Links</h3></div>
         <div class ="footer-content">
