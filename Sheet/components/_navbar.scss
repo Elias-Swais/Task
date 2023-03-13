@@ -112,6 +112,17 @@
             background-color: #F1B420;
             border-radius: 10px;
             font-size: 9px;
+            margin-right: 10px;
+            font-weight: bolder;
+            &:hover{
+                background-color: white;
+            }
+         }
+         .button2{
+            background-color: #F1B420;
+            border-radius: 10px;
+            font-size: 9px;
+            margin-right: 10px;
             font-weight: bolder;
             &:hover{
                 background-color: white;
